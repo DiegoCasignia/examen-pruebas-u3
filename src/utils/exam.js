@@ -1,7 +1,7 @@
 function calcWeightedGrade(items) {
     let weight = 0;
     let nota = 0;
-    for (let i=0; i < item.length; i++){
+    for (let i=0; i < items.length; i++){
         const item = items[i];
         if (item.score < 0 || item.weight < 0 || item.score > 100 || item.weight > 1){
             throw new Error('RangeError');
